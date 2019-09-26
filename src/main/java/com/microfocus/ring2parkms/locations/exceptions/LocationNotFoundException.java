@@ -1,7 +1,7 @@
 package com.microfocus.ring2parkms.locations.exceptions;
 
-import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.http.HttpStatus;
+import org.springframework.web.bind.annotation.ResponseStatus;
 
 /**
  * Allow the controller to return a 404 if a location is not found by simply

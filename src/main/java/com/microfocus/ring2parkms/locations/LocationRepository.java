@@ -17,7 +17,7 @@ public interface LocationRepository extends Repository<Location, Long> {
      *
      * @return The locations if found, null otherwise.
      */
-    public List<Location> findAll();
+    List<Location> findAll();
 
     /**
      * Find a location with the specified location number.
@@ -25,7 +25,7 @@ public interface LocationRepository extends Repository<Location, Long> {
      * @param locationNumber
      * @return The location if found, null otherwise.
      */
-    public Location findByNumber(String locationNumber);
+    Location findByNumber(String locationNumber);
 
     /**
      * Find locations whose owner country contains the specified string
@@ -34,7 +34,7 @@ public interface LocationRepository extends Repository<Location, Long> {
      * @return The list of matching locations - always non-null, but may be
      * empty.
      */
-    public List<Location> findByCountryContainingIgnoreCase(String country);
+    List<Location> findByCountryContainingIgnoreCase(String country);
 
     /**
      * Find locations whose owner city contains the specified string
@@ -43,7 +43,7 @@ public interface LocationRepository extends Repository<Location, Long> {
      * @return The list of matching locations - always non-null, but may be
      * empty.
      */
-    public List<Location> findByCityContainingIgnoreCase(String city);
+    List<Location> findByCityContainingIgnoreCase(String city);
 
     /**
      * Fetch the number of locations known to the system.
@@ -51,6 +51,6 @@ public interface LocationRepository extends Repository<Location, Long> {
      * @return The number of locations.
      */
     @Query("SELECT count(*) from Location")
-    public int countLocations();
+    int countLocations();
 }
 

@@ -163,7 +163,9 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
-
+                <configuration>
+                    <arguments>--eurekaHostname=${eureka-server},--eurekaPort=${eureka-port},--serverPort=${server-port}</arguments>
+                </configuration>
                 <executions>
                     <execution>
                         <goals>

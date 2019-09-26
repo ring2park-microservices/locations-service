@@ -1,12 +1,12 @@
 package com.microfocus.ring2parkms.locations;
 
-import javax.validation.constraints.NotBlank;
 import org.springframework.format.annotation.NumberFormat;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Size;
 import java.io.Serializable;
 import java.math.BigDecimal;
