@@ -65,7 +65,7 @@ public class Main {
 				System.setProperty("server.port", serverPort);
 			}
 		}
-        bootOptions.add(eurekaHost);
+        bootOptions.add(serverPort);
 
 		if (cmd.hasOption("eh")) {
 			eurekaHost = cmd.getOptionValue("eh").replace("'", "");

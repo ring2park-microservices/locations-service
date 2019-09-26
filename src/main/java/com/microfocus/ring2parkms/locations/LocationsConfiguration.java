@@ -26,10 +26,6 @@ import java.util.logging.Logger;
 @PropertySource("classpath:db-config.properties")
 public class LocationsConfiguration {
 
-    private String serverPort;
-    private String eurekaHost;
-    private String eurekaPort;
-
     protected Logger logger;
 
     public LocationsConfiguration() {
